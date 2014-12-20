@@ -1,0 +1,88 @@
+	{
+		"templateId": "org.webosports.messaging.sipe",
+		"loc_name": "Office Communicator",
+		"loc_subheader": "Account Settings",
+		"icon": {
+			"loc_32x32": "images/sipe-32x32.png",
+			"loc_48x48": "images/sipe-48x48.png"
+		},
+		"hidden":false,
+		"validator":{
+			"customUI":{
+				"appId":"org.webosports.messaging",
+				"name":"wizard"
+			},
+			"address": "palm://com.palm.imaccountvalidator/checkCredentials"
+		},
+		"loc_usernameLabel": "Email Address",
+		"loc_explainLabel": "username@my.company.com",
+		"loc_passwordLabel": "Password",
+		"loc_ServerSetup": {
+			"Display":"Server Setup",
+			"ServerName":{
+				"Display":"Server Name",
+				"Value":""
+			},
+			"ServerPort":{
+				"Display":"Server Port",
+				"Value":"5061"
+			},
+			"ServerTLS":{
+				"Display":"Enable Server TLS",
+				"Explain": "Enable or disable TLS for this server. Check with the server administrator for more help.",
+				"Value":false
+			},
+			"ServerTimeout": "Server Timeout (in seconds)",
+			"ServerBuddyList": "seconds wait for Buddy List",
+			"Warning":"These settings cannot be changed once this account is created."
+		},
+		"loc_AccountSetup": {
+			"Display":"Account Setup",
+			"Login":{
+				"Display":"Domain Login",
+				"Explain": "In the format of 'DOMAIN\\USERNAME'.",
+				"Value":""
+			},
+			"UserAgent":{
+				"Display":"User Agent",
+				"Explain": "Only if required. Check with the server administrator for more help.",
+				"Value":""
+			},
+			"Proxy":{
+				"Display":"Enable Proxy",
+				"Explain": "Enable or disable Proxy for this server. Check with the server administrator for more help.",
+				"Value":false
+			},
+			"Warning":"These settings cannot be changed once this account is created."
+		},
+		"loc_AccountOptions": {
+			"Display":"Account Options",
+			"Alias":{"Display":"Show buddy aliases","Explain":"Select 'Yes' to show your buddies alias instead of their login/email address.","Show":false,"Value":false},
+			"Avatar":{"Display":"Show buddy avatars","Explain":"Select 'Yes' to show Avatars (display pictures) of your buddies.","Show":true,"Value":true},
+			"BadCert":{"Display":"Accept Invalid Cert","Explain":"Select 'Yes' to trust invalid, expired or untrusted server certificates.","Show":true,"Value":false},
+			"Warning":"These settings cannot be changed once this account is created."
+		},
+		"loc_signInButton": "Sign In",
+		"loc_Donate": "Help Support Development",
+		"loc_Toggles": {
+			"DisplayYes": "Yes",
+			"DisplayNo": "No"
+		},
+		"capabilityProviders": [
+		{
+			"capability": "MESSAGING",
+			"capabilitySubtype": "IM",
+			"id": "org.webosports.messaging.sipe",
+			"loc_shortName": "SIPE",
+			"icon": {"splitter": "images/sipe-32x32.png"},
+			"implementation": "palm://com.palm.libpurple/",
+			"onEnabled": "palm://com.palm.libpurple/onEnabled",
+			"readOnlyData": true,
+			"serviceName":"type_sipe",
+			"dbkinds": {
+				"imcommand": "com.palm.imcommand.libpurple:1",
+				"immessage": "com.palm.immessage.libpurple:1"
+			}
+		}
+		]
+	}

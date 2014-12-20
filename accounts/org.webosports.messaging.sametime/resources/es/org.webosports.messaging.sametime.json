@@ -1,0 +1,82 @@
+[
+	{
+		"capabilityProviders": [
+		{
+			"capability": "MESSAGING",
+			"capabilitySubtype": "IM",
+			"dbkinds": {
+				"imcommand": "com.palm.imcommand.libpurple:1",
+				"immessage": "com.palm.immessage.libpurple:1"
+			},
+			"icon": {
+				"splitter": "images/sametime-32x32.png"
+			},
+			"id": "org.webosports.messaging.sametime",
+			"implementation": "palm://com.palm.libpurple/",
+			"loc_shortName": "SAMETIME",
+			"onEnabled": "palm://com.palm.libpurple/onEnabled",
+			"readOnlyData": true,
+			"serviceName": "type_sametime"
+		}
+		],
+		"hidden": false,
+		"icon": {
+			"loc_32x32": "images/sametime-32x32.png",
+			"loc_48x48": "images/sametime-48x48.png"
+		},
+		"loc_name": "Sametime",
+		"loc_subheader": "Configuración de la cuenta",
+		"templateId": "org.webosports.messaging.sametime",
+		"validator": {
+			"address": "palm://com.palm.imaccountvalidator/checkCredentials",
+			"customUI": {
+				"appId": "org.webosports.messaging",
+				"name": "wizard"
+			}
+		},
+		"loc_usernameLabel": "Nombre de usuario",
+		"loc_explainLabel": "username",
+		"loc_passwordLabel": "Contraseña",
+		"loc_ServerSetup": {
+			"Display": "Configuración del Servidor",
+			"ServerName":{
+				"Display": "Nombre del servidor",
+				"Value": ""
+			},
+			"ServerPort":{
+				"Display": "Puerto del servidor",
+				"Value": "1533"
+			},
+			"ServerTLS":{
+				"Display":"Habilitar encripción TLS",
+				"Explain": "Activar o desactivar el protocolo TLS para este servidor. Consulte con el administrador del servidor para obtener más ayuda.",
+				"Value":false
+			},
+			"ServerTimeout": "Tiempo de espera para Servidor (en segundos)",
+			"ServerBuddyList": "segundos de espera para la lista de amigos",
+			"Warning": "Estos ajustes no se pueden cambiar una vez que esta cuenta se crea."
+		},
+		"loc_AccountSetup": {
+			"Display":"Configuración de Cuenta",
+			"HideClientID":{
+				"Display":"Esconder ID de Cliente",
+				"Explain": "Selecciona "Sí" para hacer que tu teléfono aparezca como un cliente Sametime Connect default.",
+				"Value":true
+			},
+			"Warning":"Estos ajustes no se pueden cambiar una vez que esta cuenta se crea."
+		},
+		"loc_AccountOptions": {
+			"Display": "Opciones de la cuenta",
+			"Alias": {"Display": "Mostrar aliases de amigos","Explain": "Seleccione 'Sí' para mostrar los alias de sus amigos en lugar de su nombre de usuario / dirección de correo electrónico.","Show": false,"Value": true},
+			"Avatar": {"Display": "Mostrar avatares de amigos","Explain": "Seleccione 'Sí' para mostrar avatares (imágenes para mostrar) de sus amigos.","Show": true,"Value": true},
+			"BadCert": {"Display": "Cert Inválidos","Explain": "Seleccione 'Sí' para aceptar certificados desconocidos o expirados.","Show": true,"Value": false},
+			"Warning": "Estos ajustes no se pueden cambiar una vez que esta cuenta se crea."
+		},
+		"loc_signInButton": "Iniciar sesión",
+		"loc_Donate": "Apoye al Desarrollo",
+		"loc_Toggles": {
+			"DisplayYes": "Sí",
+			"DisplayNo": "No"
+		}
+	}
+]
