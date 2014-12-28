@@ -1,0 +1,79 @@
+	{
+		"capabilityProviders": [
+		{
+			"capability": "MESSAGING",
+			"capabilitySubtype": "IM",
+			"dbkinds": {
+				"imcommand": "com.palm.imcommand.libpurple:1",
+				"immessage": "com.palm.immessage.libpurple:1"
+			},
+			"icon": {
+				"splitter": "images/xfire-32x32.png"
+			},
+			"id": "org.webosports.messaging.xfire",
+			"implementation": "palm://com.palm.libpurple/",
+			"loc_shortName": "XFIRE",
+			"onEnabled": "palm://com.palm.libpurple/onEnabled",
+			"readOnlyData": true,
+			"serviceName": "type_xfire"
+		}
+		],
+		"icon": {
+			"loc_32x32": "images/xfire-32x32.png",
+			"loc_48x48": "images/xfire-48x48.png"
+		},
+		"loc_name": "XFire",
+		"loc_subheader": "Account Settings",
+		"templateId": "org.webosports.messaging.xfire",
+		"validator": {
+			"address": "palm://com.palm.imaccountvalidator/checkCredentials",
+			"customUI": {
+				"appId": "org.webosports.messaging",
+				"name": "wizard"
+			}
+		},
+		"loc_usernameLabel": "Email Address",
+		"loc_explainLabel": "username",
+		"loc_passwordLabel": "Password",
+		"loc_ServerSetup": {
+			"Display": "Server Setup",
+			"ServerName":{
+				"Display": "Server Name",
+				"Value": "cs.xfire.com"
+			},
+			"ServerPort":{
+				"Display": "Server Port",
+				"Value": "25999"
+			},
+			"ServerTLS":{
+				"Display":"Enable Server TLS",
+				"Explain": "Enable or disable TLS for this server. Check with the server administrator for more help.",
+				"Value":false
+			},
+			"ServerTimeout": "Server Timeout (in seconds)",
+			"ServerBuddyList": "seconds wait for Buddy List",
+			"Warning": "These settings cannot be changed once this account is created."
+		},
+		"loc_AccountSetup": {
+			"Display":"Account Setup",
+			"XFireVersion":{
+				"Display":"Version",
+				"Explain": "The XFire server version. This will need to be updated from time to time.",
+				"Value":"132"
+			},
+			"Warning":"These settings cannot be changed once this account is created."
+		},
+		"loc_AccountOptions": {
+			"Display": "Account Options",
+			"Alias": {"Display": "Show buddy aliases","Explain": "Select 'Yes' to show your buddies alias instead of their login/email address.","Show": true,"Value": true},
+			"Avatar": {"Display": "Show buddy avatars","Explain": "Select 'Yes' to show Avatars (display pictures) of your buddies.","Show": true,"Value": true},
+			"BadCert": {"Display": "Accept Invalid Cert","Explain": "Select 'Yes' to trust invalid, expired or untrusted server certificates.","Show": true,"Value": false},
+			"Warning": "These settings cannot be changed once this account is created."
+		},
+		"loc_signInButton": "Sign In",
+		"loc_Donate": "Help Support Development",
+		"loc_Toggles": {
+			"DisplayYes": "Yes",
+			"DisplayNo": "No"
+		}
+	}

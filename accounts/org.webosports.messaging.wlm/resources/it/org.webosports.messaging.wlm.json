@@ -1,0 +1,73 @@
+[
+	{
+		"capabilityProviders": [
+		{
+			"capability": "MESSAGING",
+			"capabilitySubtype": "IM",
+			"dbkinds": {
+				"imcommand": "com.palm.imcommand.libpurple:1",
+				"immessage": "com.palm.immessage.libpurple:1"
+			},
+			"icon": {
+				"splitter": "images/live-32x32.png"
+			},
+			"id": "org.webosports.messaging.wlm",
+			"implementation": "palm://com.palm.libpurple/",
+			"loc_shortName": "WLM",
+			"onEnabled": "palm://com.palm.libpurple/onEnabled",
+			"readOnlyData": true,
+			"serviceName": "type_wlm"
+		}
+		],
+		"hidden": false,
+		"icon": {
+			"loc_32x32": "images/live-32x32.png",
+			"loc_48x48": "images/live-48x48.png"
+		},
+		"loc_name": "Live Messenger (WLM)",
+		"loc_subheader": "Impostazioni account",
+		"templateId": "org.webosports.messaging.wlm",
+		"validator": {
+			"address": "palm://com.palm.imaccountvalidator/checkCredentials",
+			"customUI": {
+				"appId": "org.webosports.messaging",
+				"name": "wizard"
+			}
+		},
+		"loc_usernameLabel": "Indirizzo e-mail",
+		"loc_explainLabel": "username@live.com",
+		"loc_passwordLabel": "Password",
+		"loc_ServerSetup": {
+			"Display": "Server Setup",
+			"ServerName":{
+				"Display": "Name Server",
+				"Value": "messenger.hotmail.com"
+			},
+			"ServerPort":{
+				"Display": "Porta server",
+				"Value": "1863"
+			},
+			"ServerTLS":{
+				"Display":"Abilita server TLS",
+				"Explain": "Abilitare o disabilitare TLS per questo server. Verificare con l'amministratore del server per ulteriori informazioni.",
+				"Value":false
+			},
+			"ServerTimeout": "Server timeout (in secondi)",
+			"ServerBuddyList": "seconds wait for Buddy List",
+			"Warning": "Queste impostazioni non possono essere cambiati una volta che questo conto è stato creato."
+		},
+		"loc_AccountOptions": {
+			"Display": "Opzioni account",
+			"Alias": {"Display": "Mostra Buddy alias","Explain": "Selezionare 'Sì' per mostrare ai tuoi compagni alias invece del loro login / indirizzo email.","Show": true,"Value": true},
+			"Avatar": {"Display": "Mostra buddy avatars","Explain": "Selezionare 'Sì' per visualizzare gli avatar (le immagini dell'esposizione) dei vostri compagni.","Show": true,"Value": true},
+			"BadCert": {"Display": "Accettare valide Cert","Explain": "Selezionare 'Sì' alla fiducia non valido, scaduto o non attendibili i certificati server.","Show": true,"Value": false},
+			"Warning": "Queste impostazioni non possono essere cambiati una volta che questo conto è stato creato."
+		},
+		"loc_signInButton": "Entra",
+		"loc_Donate": "Supporto della Guida per lo sviluppo",
+		"loc_Toggles": {
+			"DisplayYes": "Sì",
+			"DisplayNo": "No"
+		}
+	}
+]
