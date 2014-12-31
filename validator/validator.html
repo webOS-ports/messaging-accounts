@@ -2,22 +2,12 @@
 <html>
     <head>
         <title>Create Messaging Account</title>
-        <script type="text/javascript">
-            var deviceInfo = JSON.parse(PalmSystem.deviceInfo);
-
-            var loc = window.location.href;
-            var new_loc;
-
-            if (deviceInfo.platformVersionMajor < 3)
-                new_loc = "validator_mojo.html";
-            else
-                new_loc = "validator_enyo.html";
-
-            new_loc = loc.replace(/\/validator\.html/, "/" + new_loc);
-
-            window.location.href = new_loc;
-        </script>
+        <script src="/usr/palm/frameworks/enyo/1.0/framework/enyo.js"
+            type="text/javascript"></script>
     </head>
     <body>
+        <script type="text/javascript">
+            new Purple.Validator(enyo.windowParams).renderInto(document.body);
+        </script>
     </body>
 </html>
