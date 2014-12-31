@@ -1,7 +1,7 @@
 enyo.kind({
     name: "Purple.AccountService",
     kind: "PalmService",
-    service: "palm://org.webosinternals.purple.validator/"
+    service: "palm://com.palm.imaccountvalidator/"
 });
 
 enyo.kind({
