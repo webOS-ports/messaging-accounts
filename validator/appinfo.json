@@ -1,5 +1,5 @@
 {
-    "id": "org.webosinternals.purple",
+    "id": "org.webosports.app.imvalidator",
     "uiRevision": 2,
     "version": "0.9.2",
     "vendor": "Benedikt Sauer",
@@ -9,5 +9,5 @@
     "type": "web",
     "noWindow": true,
     "main": "validator.html",
-    "title": "libpurple Messaging Plugins"
+    "title": "IM Messaging Account Validator"
 }
