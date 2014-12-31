@@ -1,0 +1,22 @@
+{
+    "id": "org.webosinternals.purple.imcommand:1",
+    "extends": ["com.palm.imcommand:1"],
+    "indexes": [
+        {
+            "name": "byrevision",
+            "props": [{"name": "_rev"}]
+        },
+        {
+            "name": "outgoingCmd",
+            "props": [{"name": "handler"}, {"name": "status", "default":"pending"}]
+        },
+        {
+            "name": "waitingCmd",
+            "props": [{"name": "status", "default":"pending"}]
+        },
+        {
+            "name": "pendingBuddyInvite",
+            "props": [{"name": "serviceName"},{"name": "fromUsername"}, {"name": "targetUsername"} ]
+        }
+    ]
+}

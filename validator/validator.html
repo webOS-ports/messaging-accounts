@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Messaging Account</title>
+        <script type="text/javascript">
+            var deviceInfo = JSON.parse(PalmSystem.deviceInfo);
+
+            var loc = window.location.href;
+            var new_loc;
+
+            if (deviceInfo.platformVersionMajor < 3)
+                new_loc = "validator_mojo.html";
+            else
+                new_loc = "validator_enyo.html";
+
+            new_loc = loc.replace(/\/validator\.html/, "/" + new_loc);
+
+            window.location.href = new_loc;
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

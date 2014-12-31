@@ -1,0 +1,18 @@
+{
+    "id": "org.webosinternals.purple.imloginstate:1",
+    "extends": ["com.palm.imloginstate:1"],
+    "indexes": [
+        {
+            "name": "byrevision",
+            "props": [{"name": "_rev"}]
+        },
+        {
+            "name": "byIpAddress",
+            "props": [{"name": "ipAddress"}]
+        },
+        {
+            "name": "byUserAndService",
+            "props": [{"name": "serviceName"},{"name": "username"}]
+        }
+    ]
+}
