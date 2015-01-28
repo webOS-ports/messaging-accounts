@@ -257,7 +257,7 @@ enyo.kind({
             onSuccess: "eventSuccess",
             onFailure: "eventFail"
         },
-        { kind: "CrossAppResult" }
+        { kind: "enyo.CrossAppResult" }
     ],
 
     doBack: function(sender) {
