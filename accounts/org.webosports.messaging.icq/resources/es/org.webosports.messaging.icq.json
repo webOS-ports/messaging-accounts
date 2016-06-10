@@ -30,8 +30,8 @@
 		"validator": {
 			"address": "palm://com.palm.imaccountvalidator/checkCredentials",
 			"customUI": {
-				"appId": "org.webosports.messaging",
-				"name": "wizard"
+				"appId":"org.webosports.app.imvalidator",
+				"name":"validator.html"
 			}
 		},
 		"loc_usernameLabel": "Número de ICQ",

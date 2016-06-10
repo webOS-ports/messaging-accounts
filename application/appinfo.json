@@ -1,0 +1,13 @@
+{
+    "id": "org.webosports.app.imvalidator",
+    "uiRevision": 2,
+    "version": "0.0.1",
+    "vendor": "WebOS Ports",
+    "vendor_email": "webos.ports@gmail.com",
+    "visible": false,
+    "hidden": true,
+    "type": "web",
+    "noWindow": true,
+    "main": "validator.html",
+    "title": "Libpurple Messaging Plugins Validator App"
+}
