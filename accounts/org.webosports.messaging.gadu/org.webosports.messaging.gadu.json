@@ -1,6 +1,7 @@
 	{
 		"templateId": "org.webosports.messaging.gadu",
 		"loc_name": "Gadu Gadu",
+		"loc_subheader": "Account Settings",
 		"icon": {
 			"loc_32x32": "images/gadu-32x32.png",
 			"loc_48x48": "images/gadu-48x48.png"
