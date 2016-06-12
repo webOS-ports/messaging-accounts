@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Messaging Account</title>
+    <script src="/opt/PalmSDK/0.1/share/framework/enyo/1.0/framework/enyo.js"
+        type="text/javascript" launch="nobridge"></script>
+</head>
+<body>
+<script type="text/javascript">
+    var params = {
+        template: {
+            templateId: "org.webosinternals.purple.icq",
+            prpl: "prpl-icq",
+            loc_usernameLabel: "ICQ Number",
+            preferences: {
+                bla: "palim"
+            }
+        },
+        locale: "de_DE"
+    };
+
+    new Purple.Validator(params).renderInto(document.body);
+</script>
+</body>
+</html>
