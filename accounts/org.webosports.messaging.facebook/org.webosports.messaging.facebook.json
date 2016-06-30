@@ -1,69 +1,56 @@
-	{
-		"templateId": "org.webosports.messaging.facebook",
-		"loc_name": "Facebook Chat",
-		"loc_subheader": "Account Settings",
-		"icon": {
-			"loc_32x32": "images/facebook-32x32.png",
-			"loc_48x48": "images/facebook-48x48.png"
-		},
-		"hidden":false,
-		"validator":{
-			"customUI":{
-				"appId":"org.webosports.app.imvalidator",
-				"name":"validator.html"
-			},
-			"address": "palm://com.palm.imaccountvalidator/checkCredentials"
-		},
-		"loc_usernameLabel": "Email Address",
-		"loc_explainLabel": "username@domain.com",
-		"loc_passwordLabel": "Password",
-		"loc_ServerSetup": {
-			"Display":"Server Setup",
-			"ServerName":{
-				"Display":"Server Name",
-				"Value":"chat.facebook.com"
-			},
-			"ServerPort":{
-				"Display":"Server Port",
-				"Value":"5222"
-			},
-			"ServerTLS":{
-				"Display":"Enable Server TLS",
-				"Explain": "Enable or disable TLS for this server. Check with the server administrator for more help.",
-				"Value":false
-			},
-			"ServerTimeout": "Server Timeout (in seconds)",
-			"ServerBuddyList": "seconds wait for Buddy List",
-			"Warning":"These settings cannot be changed once this account is created."
-		},
-		"loc_AccountOptions": {
-			"Display":"Account Options",
-			"Alias":{"Display":"Show buddy aliases","Explain":"Select 'Yes' to show your buddies alias instead of their login/email address.","Show":false,"Value":false},
-			"Avatar":{"Display":"Show buddy avatars","Explain":"Select 'Yes' to show Avatars (display pictures) of your buddies.","Show":true,"Value":true},
-			"BadCert":{"Display":"Accept Invalid Cert","Explain":"Select 'Yes' to trust invalid, expired or untrusted server certificates.","Show":true,"Value":false},
-			"Warning":"These settings cannot be changed once this account is created."
-		},
-		"loc_signInButton": "Sign In",
-		"loc_Donate": "Help Support Development",
-		"loc_Toggles": {
-			"DisplayYes": "Yes",
-			"DisplayNo": "No"
-		},
-		"capabilityProviders": [
-		{
-			"capability": "MESSAGING",
-			"capabilitySubtype": "IM",
-			"id": "org.webosports.messaging.facebook",
-			"loc_shortName": "FACEBOOK",
-			"icon": {"splitter": "images/facebook-32x32.png"},
-			"implementation": "palm://com.palm.libpurple/",
-			"onEnabled": "palm://com.palm.libpurple/onEnabled",
-			"readOnlyData": true,
-			"serviceName":"type_facebook",
-			"dbkinds": {
+{
+    "capabilityProviders": [
+        {
+            "capability": "MESSAGING", 
+            "capabilitySubtype": "IM", 
+            "dbkinds": {
 				"imcommand": "com.palm.imcommand.libpurple:1",
 				"immessage": "com.palm.immessage.libpurple:1"
-			}
-		}
-		]
-	}
+            }, 
+            "icon": {
+                "splitter": "images/facebook-32x32.png"
+            }, 
+            "id": "org.webosports.messaging.facebook.chat", 
+			"implementation": "palm://com.palm.libpurple/",
+			"onEnabled": "palm://com.palm.libpurple/onEnabled",
+            "readOnlyData": true, 
+            "serviceName": "type_facebook"
+        }
+    ], 
+    "icon": {
+        "loc_32x32": "images/facebook-32x32.png", 
+        "loc_48x48": "images/facebook-48x48.png"
+    }, 
+    "loc_explainUsernameLabel": "username", 
+    "loc_name": "Facebook Chat", 
+    "loc_usernameLabel": "Facebook E-Mail", 
+    "preferences": {
+        "auth_plain_in_clear": false, 
+        "connection_security": "opportunistic_tls", 
+        "port": 5222, 
+        "server": "chat.facebook.com"
+    }, 
+    "prpl": "prpl-jabber", 
+    "readPermissions": [
+        "com.palm.app.messaging", 
+        "com.palm.app.contacts", 
+        "com.palm.service.contacts", 
+        "com.palm.service.contacts.linker",
+        "org.webosports.app.contacts", 
+        "org.webosports.app.messaging"
+    ], 
+    "templateId": "org.webosports.messaging.facebook", 
+    "validator": {
+        "address": "palm://com.palm.imaccountvalidator/checkCredentials", 
+        "customUI": {
+			"appId":"org.webosports.app.imvalidator",
+			"name":"validator.html"
+        }
+    }, 
+    "writePermissions": [
+        "com.palm.app.contacts", 
+        "com.palm.app.messaging",
+        "org.webosports.app.contacts", 
+        "org.webosports.app.messaging"
+    ]
+}
