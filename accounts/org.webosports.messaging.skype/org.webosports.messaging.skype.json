@@ -8,29 +8,21 @@
 				"immessage": "com.palm.immessage.libpurple:1"
             }, 
             "icon": {
-                "splitter": "images/facebook-32x32.png"
+                "splitter": "images/skype-32x32.png"
             }, 
-            "id": "org.webosports.messaging.facebook.chat", 
+            "id": "org.webosports.messaging.skype.skype", 
 			"implementation": "palm://com.palm.libpurple/",
 			"onEnabled": "palm://com.palm.libpurple/onEnabled",
             "readOnlyData": true, 
-            "serviceName": "type_facebook"
+            "serviceName": "type_skype"
         }
     ], 
     "icon": {
-        "loc_32x32": "images/facebook-32x32.png", 
-        "loc_48x48": "images/facebook-48x48.png"
+        "loc_32x32": "images/skype-32x32.png", 
+        "loc_48x48": "images/skype-48x48.png"
     }, 
-    "loc_explainUsernameLabel": "username", 
-    "loc_name": "Facebook Chat", 
-    "loc_usernameLabel": "Facebook E-Mail", 
-    "preferences": {
-        "auth_plain_in_clear": false, 
-        "connection_security": "opportunistic_tls", 
-        "port": 5222, 
-        "server": "chat.facebook.com"
-    }, 
-    "prpl": "prpl-jabber", 
+    "loc_name": "Skype", 
+    "prpl": "prpl-skypeweb", 
     "readPermissions": [
         "com.palm.app.messaging", 
         "com.palm.app.contacts", 
@@ -39,7 +31,7 @@
         "org.webosports.app.contacts", 
         "org.webosports.app.messaging"
     ], 
-    "templateId": "org.webosports.messaging.facebook", 
+    "templateId": "org.webosports.messaging.skype", 
     "validator": {
         "address": "palm://com.palm.imaccountvalidator/checkCredentials", 
         "customUI": {

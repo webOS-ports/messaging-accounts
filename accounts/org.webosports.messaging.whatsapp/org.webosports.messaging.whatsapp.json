@@ -8,23 +8,21 @@
 				"immessage": "com.palm.immessage.libpurple:1"
             }, 
             "icon": {
-                "splitter": "images/aim-32x32.png"
+                "splitter": "images/whatsapp-32x32.png"
             }, 
-            "id": "org.webosports.messaging.aol.aim.aim", 
+            "id": "org.webosports.messaging.whatsapp.whatsapp", 
 			"implementation": "palm://com.palm.libpurple/",
 			"onEnabled": "palm://com.palm.libpurple/onEnabled",
             "readOnlyData": true, 
-            "serviceName": "type_aim"
+            "serviceName": "type_whatsapp"
         }
     ], 
     "icon": {
-        "loc_32x32": "images/aim-32x32.png", 
-        "loc_48x48": "images/aim-48x48.png"
+        "loc_32x32": "images/whatsapp-32x32.png", 
+        "loc_48x48": "images/whatsapp-48x48.png"
     }, 
-    "loc_explainUsernameLabel": "username@aim.com", 
-    "loc_name": "AOL Messenger", 
-    "loc_usernameLabel": "Email Address", 
-    "prpl": "prpl-aim", 
+    "loc_name": "whatsapp IM", 
+    "prpl": "prpl-whatsapp", 
     "readPermissions": [
         "com.palm.app.messaging", 
         "com.palm.app.contacts", 
@@ -32,8 +30,8 @@
         "com.palm.service.contacts.linker",
         "org.webosports.app.contacts", 
         "org.webosports.app.messaging"
-    ],  
-    "templateId": "org.webosports.messaging.aol.aim", 
+    ], 
+    "templateId": "org.webosports.messaging.whatsapp", 
     "validator": {
         "address": "palm://com.palm.imaccountvalidator/checkCredentials", 
         "customUI": {
