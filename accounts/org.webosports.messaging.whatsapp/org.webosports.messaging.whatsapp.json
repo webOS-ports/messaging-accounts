@@ -21,7 +21,7 @@
         "loc_32x32": "images/whatsapp-32x32.png", 
         "loc_48x48": "images/whatsapp-48x48.png"
     }, 
-    "loc_name": "whatsapp IM", 
+    "loc_name": "WhatsApp IM", 
     "prpl": "prpl-whatsapp", 
     "readPermissions": [
         "com.palm.app.messaging", 
