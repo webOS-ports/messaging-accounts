@@ -21,7 +21,7 @@
         "loc_32x32": "images/sipe-32x32.png", 
         "loc_48x48": "images/sipe-48x48.png"
     }, 
-    "loc_name": "Office Communicator", 
+    "loc_name": "SIPE", 
     "prpl": "prpl-sipe", 
     "readPermissions": [
         "com.palm.app.messaging", 
