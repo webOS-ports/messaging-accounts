@@ -11,8 +11,8 @@
                 "splitter": "images/sipe-32x32.png"
             }, 
             "id": "org.webosports.messaging.sipe.sipe", 
-			"implementation": "palm://com.palm.libpurple/",
-			"onEnabled": "palm://com.palm.libpurple/onEnabled",
+			"implementation": "palm://com.palm.imlibpurple/",
+			"onEnabled": "palm://com.palm.imlibpurple/onEnabled",
             "readOnlyData": true, 
             "serviceName": "type_sipe"
         }
@@ -29,7 +29,8 @@
         "com.palm.service.contacts", 
         "com.palm.service.contacts.linker",
         "org.webosports.app.contacts", 
-        "org.webosports.app.messaging"
+        "org.webosports.app.messaging",
+        "com.palm.imlibpurple"
     ], 
     "templateId": "org.webosports.messaging.sipe", 
     "validator": {
