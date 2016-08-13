@@ -11,9 +11,10 @@
                 "splitter": "images/yahoo-32x32.png"
             }, 
             "id": "org.webosports.messaging.yahoo.yahoo", 
-			"implementation": "palm://com.palm.imlibpurple/",
-			"onEnabled": "palm://com.palm.imlibpurple/onEnabled",
-            "readOnlyData": true, 
+            "implementation": "palm://com.palm.imlibpurple/",
+            "onEnabled": "palm://com.palm.imlibpurple/onEnabled",
+            "onCreate": "palm://com.palm.imlibpurple/onCreate",
+            "onDelete": "palm://com.palm.imlibpurple/onDelete",
             "serviceName": "type_yahoo"
         }
     ], 
