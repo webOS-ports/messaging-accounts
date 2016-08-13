@@ -56,8 +56,10 @@
 			"id": "org.webosports.messaging.myspace",
 			"loc_shortName": "MYSPACE",
 			"icon": {"splitter": "images/myspace-32x32.png"},
-			"implementation": "palm://com.palm.imlibpurple/",
-			"onEnabled": "palm://com.palm.imlibpurple/onEnabled",
+            "implementation": "palm://com.palm.imlibpurple/",
+            "onEnabled": "palm://com.palm.imlibpurple/onEnabled",
+            "onCreate": "palm://com.palm.imlibpurple/onCreate",
+            "onDelete": "palm://com.palm.imlibpurple/onDelete",
 			"readOnlyData": true,
 			"serviceName":"type_myspace",
 			"dbkinds": {

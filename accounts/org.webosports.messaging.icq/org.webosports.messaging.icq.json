@@ -10,9 +10,11 @@
             "icon": {
                 "splitter": "images/icq-32x32.png"
             }, 
-            "id": "org.webosports.messaging.icq.icq", 
-			"implementation": "palm://com.palm.imlibpurple/",
-			"onEnabled": "palm://com.palm.imlibpurple/onEnabled",
+            "id": "org.webosports.messaging.icq", 
+            "implementation": "palm://com.palm.imlibpurple/",
+            "onEnabled": "palm://com.palm.imlibpurple/onEnabled",
+            "onCreate": "palm://com.palm.imlibpurple/onCreate",
+            "onDelete": "palm://com.palm.imlibpurple/onDelete",
             "readOnlyData": true, 
             "serviceName": "type_icq"
         }

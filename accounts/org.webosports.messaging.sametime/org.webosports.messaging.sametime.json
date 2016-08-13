@@ -65,8 +65,10 @@
 			"id": "org.webosports.messaging.sametime",
 			"loc_shortName": "SAMETIME",
 			"icon": {"splitter": "images/sametime-32x32.png"},
-			"implementation": "palm://com.palm.imlibpurple/",
-			"onEnabled": "palm://com.palm.imlibpurple/onEnabled",
+            "implementation": "palm://com.palm.imlibpurple/",
+            "onEnabled": "palm://com.palm.imlibpurple/onEnabled",
+            "onCreate": "palm://com.palm.imlibpurple/onCreate",
+            "onDelete": "palm://com.palm.imlibpurple/onDelete",
 			"readOnlyData": true,
 			"serviceName":"type_sametime",
 			"dbkinds": {
