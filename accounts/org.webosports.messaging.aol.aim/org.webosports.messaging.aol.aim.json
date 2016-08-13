@@ -10,7 +10,7 @@
             "icon": {
                 "splitter": "images/aim-32x32.png"
             }, 
-            "id": "org.webosports.messaging.aol.aim.aim", 
+            "id": "org.webosports.messaging.aol.aim", 
             "implementation": "palm://com.palm.imlibpurple/",
             "onEnabled": "palm://com.palm.imlibpurple/onEnabled",
             "onCreate": "palm://com.palm.imlibpurple/onCreate",

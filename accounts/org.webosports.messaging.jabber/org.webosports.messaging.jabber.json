@@ -10,7 +10,7 @@
             "icon": {
                 "splitter": "images/jabber-32x32.png"
             }, 
-            "id": "org.webosports.messaging.jabber.jabber", 
+            "id": "org.webosports.messaging.jabber", 
             "implementation": "palm://com.palm.imlibpurple/",
             "onEnabled": "palm://com.palm.imlibpurple/onEnabled",
             "onCreate": "palm://com.palm.imlibpurple/onCreate",

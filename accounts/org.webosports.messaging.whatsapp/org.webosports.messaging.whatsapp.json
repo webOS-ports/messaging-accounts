@@ -10,7 +10,7 @@
             "icon": {
                 "splitter": "images/whatsapp-32x32.png"
             }, 
-            "id": "org.webosports.messaging.whatsapp.whatsapp", 
+            "id": "org.webosports.messaging.whatsapp", 
             "implementation": "palm://com.palm.imlibpurple/",
             "onEnabled": "palm://com.palm.imlibpurple/onEnabled",
             "onCreate": "palm://com.palm.imlibpurple/onCreate",

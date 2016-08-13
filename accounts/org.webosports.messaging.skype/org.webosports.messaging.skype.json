@@ -10,7 +10,7 @@
             "icon": {
                 "splitter": "images/skype-32x32.png"
             }, 
-            "id": "org.webosports.messaging.skype.skype", 
+            "id": "org.webosports.messaging.skype", 
             "implementation": "palm://com.palm.imlibpurple/",
             "onEnabled": "palm://com.palm.imlibpurple/onEnabled",
             "onCreate": "palm://com.palm.imlibpurple/onCreate",
