@@ -131,6 +131,7 @@ enyo.kind({
 
             this.$._group.createComponent({
                 layoutKind: "HFlexLayout",
+                style: node.text==="" ? "display: none;" : undefined,
                 components: [
                     {content: node.text, flex: 1},
                     innerComponent
