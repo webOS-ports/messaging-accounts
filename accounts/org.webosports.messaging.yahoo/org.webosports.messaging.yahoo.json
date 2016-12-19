@@ -15,7 +15,7 @@
             "onEnabled": "palm://com.palm.imlibpurple/onEnabled",
             "onCreate": "palm://com.palm.imlibpurple/onCreate",
             "onDelete": "palm://com.palm.imlibpurple/onDelete",
-            "serviceName": "type_yahoo"
+            "serviceName": "type_eionrobb-funyahoo-plusplus"
         }
     ], 
     "icon": {
@@ -23,7 +23,7 @@
         "loc_48x48": "images/yahoo-48x48.png"
     }, 
     "loc_name": "Yahoo IM", 
-    "prpl": "prpl-yahoo", 
+    "prpl": "prpl-eionrobb-funyahoo-plusplus", 
     "readPermissions": [
         "com.palm.app.messaging",
         "com.palm.app.contacts",
