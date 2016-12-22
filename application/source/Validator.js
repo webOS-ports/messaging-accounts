@@ -22,11 +22,9 @@ enyo.kind({
     prefs: {},
 
     create: function(params) {
-		console.log("Herrie arguments: "+JSON.stringify(arguments));
         this.inherited(arguments);
 		var mytemplate = getQueryVariable("enyoWindowParams");
         this.template = params.initialTemplate || params.template || mytemplate;
-        console.log("Herrie this.template: "+this.template);
 		this.prefs = this.template.preferences || {};
         
         if (this.template.loc_usernameLabel)
