@@ -15,8 +15,6 @@ ICQ
 
 Jabber
 
-MySpace
-
 QQ
 
 (IBM) Sametime
@@ -25,8 +23,5 @@ Sipe (A third-party Pidgin plugin for Microsoft LCS/OCS including Microsoft Offi
 
 Skype
 
-WhatsApp
-
 Yahoo
-
 
