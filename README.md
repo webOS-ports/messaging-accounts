@@ -5,8 +5,6 @@ Messaging account definitions, provides account definitions for various IM accou
 
 Currently available (based on templates from WebOS Internals for legacy webOS):
 
-AOL/AIM
-
 Gadu-Gadu
 
 (Novell) Groupwise
