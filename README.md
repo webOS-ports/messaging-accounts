@@ -23,3 +23,15 @@ Skype
 
 Yahoo
 
+TO DO:
+
+Yahoo/Skype: Update to latest
+Facebook: Try https://github.com/dequis/purple-facebook/
+ICQ: Add new plugin from: https://github.com/EionRobb/icyque
+Instagram DM: Try https://github.com/EionRobb/purple-instagram
+Matrix: Try https://github.com/matrix-org/purple-matrix
+Signal: Try https://github.com/hoehermann/libpurple-signald
+Slack: Try https://github.com/dylex/slack-libpurple/
+WeChat: Try https://github.com/sbwtw/pidgin-wechat
+WhatsApp: Try https://github.com/hoehermann/purple-gowhatsapp
+
