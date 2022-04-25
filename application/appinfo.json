@@ -8,6 +8,7 @@
     "hidden": true,
     "type": "web",
     "noWindow": true,
+    "icon": "",
     "main": "validator.html",
     "title": "Libpurple Messaging Plugins Validator App",
     "requiredPermissions": ["activities.manage", "applications", "applications.internal", "database.internal", "services", "settings", "system"]
