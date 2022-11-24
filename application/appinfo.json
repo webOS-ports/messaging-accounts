@@ -11,5 +11,5 @@
     "icon": "",
     "main": "validator.html",
     "title": "Libpurple Messaging Plugins Validator App",
-    "requiredPermissions": ["activities.manage", "applications", "applications.internal", "database.internal", "services", "settings", "system"]
+    "requiredPermissions": ["activity.operation", "database.operation", "imaccountvalidator.operation"]
 }
