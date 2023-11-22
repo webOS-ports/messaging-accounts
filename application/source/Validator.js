@@ -23,9 +23,9 @@ enyo.kind({
 
     create: function(params) {
         this.inherited(arguments);
-		var mytemplate = getQueryVariable("enyoWindowParams");
+        var mytemplate = getQueryVariable("enyoWindowParams");
         this.template = params.initialTemplate || params.template || mytemplate;
-		this.prefs = this.template.preferences || {};
+        this.prefs = this.template.preferences || {};
         
         if (this.template.loc_usernameLabel)
             this.$.usernameGroup.setCaption(this.template.loc_usernameLabel);
