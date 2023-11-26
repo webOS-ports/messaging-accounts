@@ -23,8 +23,8 @@ enyo.kind({
 
     create: function(params) {
         this.inherited(arguments);
-		var mytemplate = getQueryVariable("enyoWindowParams");
-        this.template = params.initialTemplate || params.template || mytemplate;
+		var mytemplate = JSON.parse(getQueryVariable("enyoWindowParams"));
+        this.template = params.initialTemplate || params.template || mytemplate.template;
 		this.prefs = this.template.preferences || {};
         
         if (this.template.loc_usernameLabel)
