@@ -1,0 +1,53 @@
+{
+    "capabilityProviders": [
+        {
+            "capability": "MESSAGING", 
+            "capabilitySubtype": "IM", 
+            "dbkinds": {
+				"imcommand": "com.palm.imcommand.libpurple:1",
+				"immessage": "com.palm.immessage.libpurple:1"
+            }, 
+            "icon": {
+                "splitter": "images/matrix-32x32.png"
+            }, 
+            "id": "org.webosports.messaging.matrix", 
+            "implementation": "palm://com.palm.imlibpurple/",
+            "onEnabled": "palm://com.palm.imlibpurple/onEnabled",
+            "onCreate": "palm://com.palm.imlibpurple/onCreate",
+            "onDelete": "palm://com.palm.imlibpurple/onDelete",
+            "readOnlyData": true, 
+            "serviceName": "type_matrix"
+        }
+    ], 
+    "icon": {
+        "loc_32x32": "images/matrix-32x32.png", 
+        "loc_48x48": "images/matrix-48x48.png"
+    }, 
+    "loc_explainUsernameLabel": "@id:myserver.org", 
+    "loc_name": "Matrix", 
+    "loc_usernameLabel": "Matrix username", 
+    "prpl": "prpl-matrix", 
+    "readPermissions": [
+        "com.palm.app.messaging", 
+        "com.palm.app.contacts", 
+        "com.palm.service.contacts", 
+        "com.palm.service.contacts.linker",
+        "org.webosports.app.contacts", 
+        "org.webosports.app.messaging",
+        "com.palm.imlibpurple"
+    ],  
+    "templateId": "org.webosports.messaging.matrix", 
+    "validator": {
+        "address": "palm://com.palm.imaccountvalidator/checkCredentials", 
+        "customUI": {
+			"appId":"org.webosports.app.imvalidator",
+			"name":"validator.html"
+        }
+    }, 
+    "writePermissions": [
+        "com.palm.app.contacts", 
+        "com.palm.app.messaging",
+        "org.webosports.app.contacts", 
+        "org.webosports.app.messaging"
+    ]
+}
