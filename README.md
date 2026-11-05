@@ -7,7 +7,9 @@ Currently available:
 
 Jabber (XMPP)
 
-Matrix
+Moved to luneos-synergy-connectors (own account type and sign-in):
+
+Matrix (com.palm.matrix, on purple-combined's prpl-matrix)
 
 Removed (network shut down, or vendor sunsetting the product):
 
